@@ -1,0 +1,11 @@
+D:\Project\mybase\Solution\Mongo\bin\Debug\netcoreapp2.2\Mongo.deps.json
+D:\Project\mybase\Solution\Mongo\bin\Debug\netcoreapp2.2\Mongo.runtimeconfig.json
+D:\Project\mybase\Solution\Mongo\bin\Debug\netcoreapp2.2\Mongo.runtimeconfig.dev.json
+D:\Project\mybase\Solution\Mongo\bin\Debug\netcoreapp2.2\Mongo.dll
+D:\Project\mybase\Solution\Mongo\obj\Debug\netcoreapp2.2\Mongo.csproj.CoreCompileInputs.cache
+D:\Project\mybase\Solution\Mongo\obj\Debug\netcoreapp2.2\Mongo.AssemblyInfoInputs.cache
+D:\Project\mybase\Solution\Mongo\obj\Debug\netcoreapp2.2\Mongo.AssemblyInfo.cs
+D:\Project\mybase\Solution\Mongo\bin\Debug\netcoreapp2.2\Mongo.pdb
+D:\Project\mybase\Solution\Mongo\obj\Debug\netcoreapp2.2\Mongo.dll
+D:\Project\mybase\Solution\Mongo\obj\Debug\netcoreapp2.2\Mongo.pdb
+D:\Project\mybase\Solution\Mongo\obj\Debug\netcoreapp2.2\Mongo.csprojAssemblyReference.cache
