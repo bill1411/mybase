@@ -1,0 +1,14 @@
+D:\Project\mybase\Solution\PdfOperate\bin\Debug\netcoreapp2.2\PdfOperate.deps.json
+D:\Project\mybase\Solution\PdfOperate\bin\Debug\netcoreapp2.2\PdfOperate.runtimeconfig.json
+D:\Project\mybase\Solution\PdfOperate\bin\Debug\netcoreapp2.2\PdfOperate.runtimeconfig.dev.json
+D:\Project\mybase\Solution\PdfOperate\bin\Debug\netcoreapp2.2\PdfOperate.dll
+D:\Project\mybase\Solution\PdfOperate\bin\Debug\netcoreapp2.2\Magick.NET-Q16-AnyCPU.dll
+D:\Project\mybase\Solution\PdfOperate\bin\Debug\netcoreapp2.2\O2S.Components.PDFRender4NET.dll
+D:\Project\mybase\Solution\PdfOperate\obj\Debug\netcoreapp2.2\PdfOperate.csprojAssemblyReference.cache
+D:\Project\mybase\Solution\PdfOperate\obj\Debug\netcoreapp2.2\PdfOperate.csproj.CoreCompileInputs.cache
+D:\Project\mybase\Solution\PdfOperate\obj\Debug\netcoreapp2.2\PdfOperate.AssemblyInfoInputs.cache
+D:\Project\mybase\Solution\PdfOperate\obj\Debug\netcoreapp2.2\PdfOperate.AssemblyInfo.cs
+D:\Project\mybase\Solution\PdfOperate\obj\Debug\netcoreapp2.2\PdfOperate.csproj.CopyComplete
+D:\Project\mybase\Solution\PdfOperate\bin\Debug\netcoreapp2.2\PdfOperate.pdb
+D:\Project\mybase\Solution\PdfOperate\obj\Debug\netcoreapp2.2\PdfOperate.dll
+D:\Project\mybase\Solution\PdfOperate\obj\Debug\netcoreapp2.2\PdfOperate.pdb
