@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MongoDB", "MongoDB", "{0435
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo", "Mongo\Mongo.csproj", "{7F9AB8ED-83AB-49F6-BE9A-BDF3780017E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pdf", "Pdf", "{000B3DE0-8F75-4032-920B-BDB81460CCD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfOperate", "PdfOperate\PdfOperate.csproj", "{3CB6BF15-167F-47AA-B7E4-2E33AF3B86B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{7F9AB8ED-83AB-49F6-BE9A-BDF3780017E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F9AB8ED-83AB-49F6-BE9A-BDF3780017E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F9AB8ED-83AB-49F6-BE9A-BDF3780017E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CB6BF15-167F-47AA-B7E4-2E33AF3B86B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB6BF15-167F-47AA-B7E4-2E33AF3B86B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB6BF15-167F-47AA-B7E4-2E33AF3B86B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB6BF15-167F-47AA-B7E4-2E33AF3B86B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AAB3DEED-6AB0-4BC4-A626-93251538F4EE} = {4A79DF88-36F2-4D6F-BFD1-2D4D18CE5875}
 		{7F9AB8ED-83AB-49F6-BE9A-BDF3780017E0} = {0435B263-3621-4BEE-A8EB-31E0F5823FBE}
+		{3CB6BF15-167F-47AA-B7E4-2E33AF3B86B9} = {000B3DE0-8F75-4032-920B-BDB81460CCD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0503CE6D-7D93-443E-941C-052ED2966FC4}
