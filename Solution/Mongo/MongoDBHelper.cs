@@ -412,7 +412,7 @@ namespace Mongo
                 FilterDefinition<T> filter;
                 if (isObjectId)
                 {
-                    filter = Builders<T>.Filter.Eq("_id", new ObjectId(id));
+                    filter = Builders<T>.Filter.Eq("_id", new ObjectId(id));  //默认id为objectid类型
                 }
                 else
                 {
@@ -521,6 +521,57 @@ namespace Mongo
                 if (sort == null) return client.Find(filter).Project<T>(projection).ToList();
                 //排序查询
                 return client.Find(filter).Sort(sort).Project<T>(projection).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region 查询某数据是否存在
+        /// <summary>
+        /// 查询某数据是否存在
+        /// </summary>
+        /// <param name="host">mongodb连接信息</param>
+        /// <param name="filter">查询条件</param>
+        /// <param name="field">要查询的字段,不写时查询全部</param>
+        /// <param name="sort">要排序的字段</param>
+        /// <returns>true 存在  false 不存在</returns>
+        public bool CheckData<T>(FilterDefinition<T> filter = null, string[] field = null, SortDefinition<T> sort = null) where T : class, new()
+        {
+            try
+            {
+                var client = _database.GetCollection<T>(_collName);
+
+                //不指定查询字段
+                if (field == null || field.Length == 0)
+                {
+                    if (sort == null)
+                        if(client.Find(filter).ToList().Count>0)
+                            return true;
+
+                    //进行排序
+                    if (client.Find(filter).Sort(sort).ToList().Count > 0)
+                        return true;
+                }
+
+                //制定查询字段
+                var fieldList = new List<ProjectionDefinition<T>>();
+                for (int i = 0; i < field.Length; i++)
+                {
+                    fieldList.Add(Builders<T>.Projection.Include(field[i].ToString()));
+                }
+                var projection = Builders<T>.Projection.Combine(fieldList);
+                fieldList?.Clear();
+                if (sort == null)
+                    if (client.Find(filter).Project<T>(projection).ToList().Count > 0)
+                        return true;
+                //排序查询
+                if (client.Find(filter).Sort(sort).Project<T>(projection).ToList().Count > 0)
+                    return true;
+
+                return false;
             }
             catch (Exception ex)
             {
