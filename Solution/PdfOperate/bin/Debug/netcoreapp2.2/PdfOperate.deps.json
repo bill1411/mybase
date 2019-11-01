@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "fe8f90fe9b7e6ef741d76dafcd68a5f5ace5647c"
+    "signature": "6e4516159f741d793ecc4b87ec1972c20f534c4b"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,11 +9,19 @@
       "PdfOperate/1.0.0": {
         "dependencies": {
           "System.Drawing.Common": "4.6.0",
-          "Magick.NET-Q16-AnyCPU": "7.0.0.0",
+          "iTextSharp": "5.5.13.1",
           "O2S.Components.PDFRender4NET": "2.0.1.0"
         },
         "runtime": {
           "PdfOperate.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13.1": {
+        "runtime": {
+          "lib/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.1",
+            "fileVersion": "5.5.13.1"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/3.0.0": {},
@@ -62,14 +70,6 @@
           }
         }
       },
-      "Magick.NET-Q16-AnyCPU/7.0.0.0": {
-        "runtime": {
-          "Magick.NET-Q16-AnyCPU.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.3.300"
-          }
-        }
-      },
       "O2S.Components.PDFRender4NET/2.0.1.0": {
         "runtime": {
           "O2S.Components.PDFRender4NET.dll": {
@@ -85,6 +85,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "iTextSharp/5.5.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xqzsYEYW/nMDjCtAXM5cl9fWil/Ju3HEGbsmoTKtltJc3M/9HNJzg++bCIOHm5uZITvRmZJWMO+S2u1yNG0gQg==",
+      "path": "itextsharp/5.5.13.1",
+      "hashPath": "itextsharp.5.5.13.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.0.0": {
       "type": "package",
@@ -106,11 +113,6 @@
       "sha512": "sha512-2A3spjjoPZnvpVh/sDTzd+0H8ZqTdr+hH/6obB8MMfG81EJ85PmxCKDBxhBVQiA25PliKAZ1sKogDcq9mSnFEA==",
       "path": "system.drawing.common/4.6.0",
       "hashPath": "system.drawing.common.4.6.0.nupkg.sha512"
-    },
-    "Magick.NET-Q16-AnyCPU/7.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     },
     "O2S.Components.PDFRender4NET/2.0.1.0": {
       "type": "reference",

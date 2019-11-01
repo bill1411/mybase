@@ -49,6 +49,10 @@
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[4.6.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.1, )"
             }
           },
           "imports": [
