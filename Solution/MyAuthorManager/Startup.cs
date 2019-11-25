@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using MyCore;
+using MyDomain.IRepositories;
+using MyCore.Repositories;
 
 namespace MyAuthorManager
 {
@@ -41,6 +43,9 @@ namespace MyAuthorManager
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //Session服务
             services.AddSession();
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserAppService, UserAppService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

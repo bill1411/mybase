@@ -1,0 +1,11 @@
+D:\Project\mybase\Solution\MyApplication\bin\Debug\netcoreapp3.0\MyApplication.deps.json
+D:\Project\mybase\Solution\MyApplication\bin\Debug\netcoreapp3.0\MyApplication.dll
+D:\Project\mybase\Solution\MyApplication\bin\Debug\netcoreapp3.0\MyApplication.pdb
+D:\Project\mybase\Solution\MyApplication\bin\Debug\netcoreapp3.0\MyDomain.dll
+D:\Project\mybase\Solution\MyApplication\bin\Debug\netcoreapp3.0\MyDomain.pdb
+D:\Project\mybase\Solution\MyApplication\obj\Debug\netcoreapp3.0\MyApplication.csprojAssemblyReference.cache
+D:\Project\mybase\Solution\MyApplication\obj\Debug\netcoreapp3.0\MyApplication.AssemblyInfoInputs.cache
+D:\Project\mybase\Solution\MyApplication\obj\Debug\netcoreapp3.0\MyApplication.AssemblyInfo.cs
+D:\Project\mybase\Solution\MyApplication\obj\Debug\netcoreapp3.0\MyApplication.csproj.CopyComplete
+D:\Project\mybase\Solution\MyApplication\obj\Debug\netcoreapp3.0\MyApplication.dll
+D:\Project\mybase\Solution\MyApplication\obj\Debug\netcoreapp3.0\MyApplication.pdb
