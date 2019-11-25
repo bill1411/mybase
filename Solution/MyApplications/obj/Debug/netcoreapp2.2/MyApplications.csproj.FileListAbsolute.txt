@@ -1,0 +1,11 @@
+D:\Project\mybase\Solution\MyApplications\bin\Debug\netcoreapp2.2\MyApplications.deps.json
+D:\Project\mybase\Solution\MyApplications\bin\Debug\netcoreapp2.2\MyApplications.dll
+D:\Project\mybase\Solution\MyApplications\bin\Debug\netcoreapp2.2\MyApplications.pdb
+D:\Project\mybase\Solution\MyApplications\bin\Debug\netcoreapp2.2\MyDomain.dll
+D:\Project\mybase\Solution\MyApplications\bin\Debug\netcoreapp2.2\MyDomain.pdb
+D:\Project\mybase\Solution\MyApplications\obj\Debug\netcoreapp2.2\MyApplications.csprojAssemblyReference.cache
+D:\Project\mybase\Solution\MyApplications\obj\Debug\netcoreapp2.2\MyApplications.AssemblyInfoInputs.cache
+D:\Project\mybase\Solution\MyApplications\obj\Debug\netcoreapp2.2\MyApplications.AssemblyInfo.cs
+D:\Project\mybase\Solution\MyApplications\obj\Debug\netcoreapp2.2\MyApplications.csproj.CopyComplete
+D:\Project\mybase\Solution\MyApplications\obj\Debug\netcoreapp2.2\MyApplications.dll
+D:\Project\mybase\Solution\MyApplications\obj\Debug\netcoreapp2.2\MyApplications.pdb
