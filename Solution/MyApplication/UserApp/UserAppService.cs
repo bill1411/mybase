@@ -9,7 +9,7 @@ namespace MyApplication.UserApp
     public class UserAppService:IUserAppService
     {
         //用户管理仓储接口
-        private readonly IUserRepository _userReporitory;
+        private readonly IUserRepository _repository;
 
         /// <summary>
         /// 构造函数 实现依赖注入
@@ -17,12 +17,12 @@ namespace MyApplication.UserApp
         /// <param name="userRepository">仓储对象</param>
         public UserAppService(IUserRepository userRepository)
         {
-            _userReporitory = userRepository;
+            _repository = userRepository;
         }
 
         public User CheckUser(string userName, string password)
         {
-            return _userReporitory.CheckUser(userName, password);
+            return _repository.CheckUser(userName, password);
         }
     }
 }
