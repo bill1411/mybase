@@ -75,8 +75,11 @@ namespace MyAuthorManager
             }
 
             app.UseHttpsRedirection();
+            //使用静态文件
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            //Session
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

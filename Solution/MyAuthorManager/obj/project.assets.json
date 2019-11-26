@@ -4784,6 +4784,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "MyApplications/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "MyDomain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyApplications.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyApplications.dll": {}
+        }
+      },
       "MyCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -13161,6 +13174,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "MyApplications/1.0.0": {
+      "type": "project",
+      "path": "../MyApplications/MyApplications.csproj",
+      "msbuildProject": "../MyApplications/MyApplications.csproj"
+    },
     "MyCore/1.0.0": {
       "type": "project",
       "path": "../MyCore/MyCore.csproj",
@@ -13180,6 +13198,7 @@
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.7.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.4",
+      "MyApplications >= 1.0.0",
       "MyCore >= 1.0.0"
     ]
   },
@@ -13212,6 +13231,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "D:\\Project\\mybase\\Solution\\MyApplications\\MyApplications.csproj": {
+              "projectPath": "D:\\Project\\mybase\\Solution\\MyApplications\\MyApplications.csproj"
+            },
             "D:\\Project\\mybase\\Solution\\MyCore\\MyCore.csproj": {
               "projectPath": "D:\\Project\\mybase\\Solution\\MyCore\\MyCore.csproj"
             }

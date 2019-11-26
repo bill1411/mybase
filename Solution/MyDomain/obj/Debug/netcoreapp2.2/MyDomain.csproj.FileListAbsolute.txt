@@ -1,7 +1,7 @@
-D:\Project\mybase\Solution\MyDomain\obj\Debug\netcoreapp2.2\MyDomain.AssemblyInfoInputs.cache
-D:\Project\mybase\Solution\MyDomain\obj\Debug\netcoreapp2.2\MyDomain.AssemblyInfo.cs
 D:\Project\mybase\Solution\MyDomain\bin\Debug\netcoreapp2.2\MyDomain.deps.json
 D:\Project\mybase\Solution\MyDomain\bin\Debug\netcoreapp2.2\MyDomain.dll
 D:\Project\mybase\Solution\MyDomain\bin\Debug\netcoreapp2.2\MyDomain.pdb
+D:\Project\mybase\Solution\MyDomain\obj\Debug\netcoreapp2.2\MyDomain.AssemblyInfoInputs.cache
+D:\Project\mybase\Solution\MyDomain\obj\Debug\netcoreapp2.2\MyDomain.AssemblyInfo.cs
 D:\Project\mybase\Solution\MyDomain\obj\Debug\netcoreapp2.2\MyDomain.dll
 D:\Project\mybase\Solution\MyDomain\obj\Debug\netcoreapp2.2\MyDomain.pdb
