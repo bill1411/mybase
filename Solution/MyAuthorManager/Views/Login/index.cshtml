@@ -2,7 +2,8 @@
 @{
     Layout = null;
 }
-
+@*指定页面绑定的模型为LoginModel*@
+@model LoginModel
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,26 +23,29 @@
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg"></p>
-            <form action="/Home/Index" method="post">
+            <input id="errorInfo" type="hidden" value="@ViewBag.ErrorInfo" />
+            <form asp-controller="Login" asp-action="Index" method="post" onsubmit="onSubmit()">
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="用户名">
+                    <input type="text" class="form-control" asp-for="UserName" placeholder="用户名">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="密码">
+                    <input type="password" class="form-control" asp-for="Password" placeholder="密码">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="checkbox icheck">
                             <label>
-                                <input type="checkbox"> 记住我
+                                <input asp-for="RememberMe" type="checkbox"> 记住我
                             </label>
                         </div>
                     </div>
                     <!-- /.col -->
                     <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
+                        <button id="btnLogin" type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -53,6 +57,8 @@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/lib/iCheck/icheck.js"></script>
+    <script src="~/lib/layer/layer.js"></script>
+    <script src="~/lib/jquery.cookie/src/jquery.cookie.js"></script>
     <script>
         //增加checkbox样式
         $(function () {
@@ -61,7 +67,37 @@
                 radioClass: 'iradio_square-blue',
                 increaseArea: '20%' // optional
             });
+
+            //当点击登陆按钮时，如果有返回错误提示，则弹出显示
+            if ($('#errorInfo').val()) {
+                layer.tips($("#errorInfo").val(), "#btnLogin");
+            };
+
+            //判断之前是否有设置cookie，如果有，则设置【记住我】选择框
+            if ($.cookie("username") != undefined) {
+                $('#RememberMe').attr("checked", "checked");
+            }
+            else {
+                $('#RememberMe').removeAttr("checked");
+            }
+
+            //读取cookie
+            if ($('#RememberMe:checked').length > 0) {
+                $('#UserName').val($.cookie("username"));
+                $('#Password').val($.cookie("password"));
+            }
         });
+        //根据是否勾选记住我记录或清除cookie
+        function onSubmit() {
+            if ($('#RememberMe:checked').length > 0) {//设置cookie
+                $.cookie("username", $('#UserName').val());
+                $.cookie("password", $('#Password').val());
+            }
+            else {//清除cookie
+                $.removeCookie("username");
+                $.removeCookie("password");
+            }
+        }
     </script>
 </body>
 </html>
