@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyAuthorManager.Models;
 
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Filters;
+
 namespace MyAuthorManager.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : ControllerBase
     {
         public IActionResult Index()
         {
@@ -20,5 +23,5 @@ namespace MyAuthorManager.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-    }
+    }  
 }

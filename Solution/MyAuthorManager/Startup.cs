@@ -14,6 +14,9 @@ using MyCore;
 using MyDomain.IRepositories;
 using MyCore.Repositories;
 using MyApplications;
+using MyAuthorManager.Models.ConfigModel;
+using Microsoft.Extensions.Options;
+using AutoMapper;
 
 namespace MyAuthorManager
 {
@@ -33,6 +36,7 @@ namespace MyAuthorManager
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
+                
             });
 
             //获取数据库连接字符串
@@ -57,7 +61,17 @@ namespace MyAuthorManager
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //Session服务
             services.AddSession();
-            
+            //services.AddOptions();
+            services
+                .Configure<Setting>(Configuration.GetSection("Setting"));  //此处的Setting类是自己新建的，内容要和appsetting.json中Setting节点里字段对应起来方便以后访问
+            //增加session过期时间配置项加载1800秒
+            services.AddSession(o =>
+            {
+                o.IdleTimeout = TimeSpan.FromSeconds(double.Parse("1800"));
+            });
+            //添加对AutoMapper的支持(需要引用AutoMapper.Extensions.xxx)
+            services.AddAutoMapper(typeof(MyMapper));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

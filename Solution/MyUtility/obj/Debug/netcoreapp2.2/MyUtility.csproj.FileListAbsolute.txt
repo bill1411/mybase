@@ -5,4 +5,3 @@ D:\Project\mybase\Solution\MyUtility\obj\Debug\netcoreapp2.2\MyUtility.AssemblyI
 D:\Project\mybase\Solution\MyUtility\obj\Debug\netcoreapp2.2\MyUtility.AssemblyInfo.cs
 D:\Project\mybase\Solution\MyUtility\obj\Debug\netcoreapp2.2\MyUtility.dll
 D:\Project\mybase\Solution\MyUtility\obj\Debug\netcoreapp2.2\MyUtility.pdb
-D:\Project\mybase\Solution\MyUtility\obj\Debug\netcoreapp2.2\MyUtility.csprojAssemblyReference.cache

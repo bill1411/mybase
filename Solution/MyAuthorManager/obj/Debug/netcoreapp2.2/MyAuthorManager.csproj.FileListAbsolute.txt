@@ -8,9 +8,13 @@ D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyAuthorManag
 D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyAuthorManager.pdb
 D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyAuthorManager.Views.dll
 D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyAuthorManager.Views.pdb
+D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyApplications.dll
 D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyCore.dll
 D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyDomain.dll
+D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyUtility.dll
+D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyApplications.pdb
 D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyCore.pdb
+D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyUtility.pdb
 D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyDomain.pdb
 D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManager.csprojAssemblyReference.cache
 D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManager.RazorAssemblyInfo.cache
@@ -34,5 +38,4 @@ D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManag
 D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManager.csproj.CopyComplete
 D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManager.dll
 D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManager.pdb
-D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyApplications.dll
-D:\Project\mybase\Solution\MyAuthorManager\bin\Debug\netcoreapp2.2\MyApplications.pdb
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutNew.cshtml.g.cs

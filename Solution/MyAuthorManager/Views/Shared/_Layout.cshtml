@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="~/css/AdminLTE.css">
+    <!--增加jTreecss样式-->
+    <link rel="stylesheet" href="~/lib/jstree/dist/themes/default/style.min.css">
     <!--皮肤-->
     <link rel="stylesheet" href="~/css/skins/skin-blue.css">
 </head>
 <body>
-    <ul class="sidebar-menu">
-        <li class="header">权限管理</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>组织机构</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>角色管理</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>用户管理</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>功能管理</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>权限管理</span></a></li>
-        @*<li class="treeview">
+    <div id="treeDiv" class="portlet-body">
+    </div>
+    <div>
+        <ul class="sidebar-menu">
+            <li class="header">权限管理</li>
+            <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a href="#"><i class="fa fa-link"></i> <span>组织机构</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span>角色管理</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span>用户管理</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span>功能管理</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span>权限管理</span></a></li>
+            @*<li class="treeview">
                 <a href="#">
                     <i class="fa fa-link"></i> <span>Multilevel</span>
                     <span class="pull-right-container">
@@ -31,7 +36,8 @@
                     <li><a href="#">Link in level 2</a></li>
                 </ul>
             </li>*@
-    </ul>
+        </ul>
+    </div>
     @RenderBody()
     @*@RenderSection("Scripts", required: false)*@
 </body>
@@ -40,3 +46,4 @@
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 <script src="~/js/app.js"></script>
+<script src="~/lib/jstree/dist/jstree.js"></script>
