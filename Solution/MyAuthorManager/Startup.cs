@@ -17,6 +17,11 @@ using MyApplications;
 using MyAuthorManager.Models.ConfigModel;
 using Microsoft.Extensions.Options;
 using AutoMapper;
+using MyApplications.MenuApp;
+using MyApplications.DepartmentApp;
+using MyApplications.RoleApp;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace MyAuthorManager
 {
@@ -56,12 +61,19 @@ namespace MyAuthorManager
             //依赖注入
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserAppService, UserAppService>();
+            services.AddScoped<IMenuRepository, MenuRepository>();
+            services.AddScoped<IMenuAppService, MenuAppService>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IDepartmentAppService, DepartmentAppService>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IRoleAppService, RoleAppService>();
 
             services.AddMvc();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //Session服务
             services.AddSession();
-            //services.AddOptions();
+            services.AddOptions();
+            //普通类的依赖注入
             services
                 .Configure<Setting>(Configuration.GetSection("Setting"));  //此处的Setting类是自己新建的，内容要和appsetting.json中Setting节点里字段对应起来方便以后访问
             //增加session过期时间配置项加载1800秒
@@ -89,8 +101,13 @@ namespace MyAuthorManager
             }
 
             app.UseHttpsRedirection();
-            //使用静态文件
+            //使用静态文件（可以访问所有wwwroot目录下的静态文件）
             app.UseStaticFiles();
+            //客户端就可以访问Views层的Index.js文件
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory())
+            });
             app.UseCookiePolicy();
             //Session
             app.UseSession();
