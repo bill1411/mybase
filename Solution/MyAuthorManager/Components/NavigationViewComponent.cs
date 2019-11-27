@@ -23,7 +23,7 @@ namespace MyAuthorManager.Components
 
         public IViewComponentResult Invoke()
         {
-            var userId = HttpContext.Session.GetString("CurrentUserId");
+            var userId = "c2c57210-f247-4b3f-a1d2-ad988af7c73f"; //HttpContext.Session.GetString("CurrentUserId");
             var menus = _menuAppService.GetMenusByUser(Guid.Parse(userId));
             return View(menus);
         }
