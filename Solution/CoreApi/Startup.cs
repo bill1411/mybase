@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -10,7 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
+using static SwaggerCoreApi.Extensions.SwaggerExtension;
 
 namespace CoreApi
 {
@@ -30,8 +33,14 @@ namespace CoreApi
             //注册Swagger生成器，定义一个和多个Swagger 文档
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1.0", new Info { Title = "My Demo API", Version = "1.0" });
+                //设置swagger的title
+                c.SwaggerDoc("v1.0", new Info { Title = "Api在线调试", Version = "1.0" });
+                //设置xml文件的关联位置
                 c.IncludeXmlComments(System.IO.Path.Combine(System.AppContext.BaseDirectory, "SwaggerCoreApi.xml"));
+                // 解决相同类名会报错的问题
+                c.CustomSchemaIds(type => type.FullName); 
+                //添加对控制器的标签(描述)
+                c.DocumentFilter<ApplyTagDescriptions>();
             });
         }
 
@@ -53,7 +62,9 @@ namespace CoreApi
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "My Demo API (V 1.0)");
+                c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "Api文档在线说明 (V 1.0)");
+                //注入汉化文件
+                c.InjectJavascript("/swagger.js");
             });
         }
     }
