@@ -39,3 +39,13 @@ D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManag
 D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManager.dll
 D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\MyAuthorManager.pdb
 D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutNew.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\Navigation\Default.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Menu\Index.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Menu\_Edit.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Department\Index.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Department\_Edit.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Role\Index.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\Role\_Edit.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\User\Index.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\User\_Edit.cshtml.g.cs
+D:\Project\mybase\Solution\MyAuthorManager\obj\Debug\netcoreapp2.2\Razor\Views\User\Index2.cshtml.g.cs

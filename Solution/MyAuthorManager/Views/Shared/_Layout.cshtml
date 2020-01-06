@@ -12,38 +12,109 @@
     <!--皮肤-->
     <link rel="stylesheet" href="~/css/skins/skin-blue.css">
 </head>
-<body>
-    <div id="treeDiv" class="portlet-body">
-    </div>
-    <div>
-        <ul class="sidebar-menu">
-            <li class="header">权限管理</li>
-            <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class="fa fa-link"></i> <span>组织机构</span></a></li>
-            <li><a href="#"><i class="fa fa-link"></i> <span>角色管理</span></a></li>
-            <li><a href="#"><i class="fa fa-link"></i> <span>用户管理</span></a></li>
-            <li><a href="#"><i class="fa fa-link"></i> <span>功能管理</span></a></li>
-            <li><a href="#"><i class="fa fa-link"></i> <span>权限管理</span></a></li>
-            @*<li class="treeview">
-                <a href="#">
-                    <i class="fa fa-link"></i> <span>Multilevel</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Main Header头部 -->
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="#" target="_blank" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>后台</b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>后台管理系统</b></span>
+            </a>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button（侧边栏切换按钮）-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
                 </a>
-                <ul class="treeview-menu">
-                    <li><a href="#">Link in level 2</a></li>
-                    <li><a href="#">Link in level 2</a></li>
+                <!-- 导航栏右侧按钮 -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员：admin<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">修改密码</a></li>
+                                <li><a href="#">退出密码</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar 左侧侧边栏-->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu">
+                    @*@await Component.InvokeAsync("Navigation");*@
+                    <li class="treeview">
+                        <a>
+                            <i class="fa fa-link"></i><span>角色管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li asp-action="Index" asp-controller="Role"><a href="#">111</a></li>
+                            <li><a href="#">222</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a asp-action="Index" asp-controller="User">
+                            <i class="fa fa-linux"></i><span>用户管理</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-linux"></i><span>功能管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#">555</a></li>
+                            <li><a href="#">666</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-linux"></i><span>权限管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#">777</a></li>
+                            <li><a href="#">888</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>*@
-        </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content 主内容-->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <!--当创建基于_Layout.cshtml布局页面的视图时，视图的内容会和布局页面合并，视图的内容会渲染呈现在@RenderBody()处-->
+                @RenderBody()
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- Main Footer 页脚-->
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="pull-right hidden-xs">
+                Anything you want
+            </div>
+            <!-- Default to the left -->
+            <strong>Copyright &copy; 2019 <a href="#">Company</a>.</strong> All rights reserved.
+        </footer>
     </div>
-    @RenderBody()
-    @*@RenderSection("Scripts", required: false)*@
 </body>
 </html>
 
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 <script src="~/js/app.js"></script>
+<script src="~/js/bootstrap-paginator.js"></script>
+<script src="~/lib/layer/layer.js"></script>
 <script src="~/lib/jstree/dist/jstree.js"></script>
+<script src="~/lib/select2/select2.js"></script>
+<script src="~/lib/select2/select2_locale_zh-CN.js"></script>

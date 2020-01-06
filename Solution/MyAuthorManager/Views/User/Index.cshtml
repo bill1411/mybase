@@ -2,18 +2,7 @@
     ViewBag.CurrentMenu = "User";
 }
 <div class="row">
-    <div class="col-md-3">
-        <div class="box box-primary">
-            <div class="box-header with-border">
-                <h3 class="box-title">组织机构</h3>
-            </div>
-            <div class="box-body">
-                <div id="treeDiv" class="portlet-body">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
         <div class="box box-primary">
             <div class="box-header with-border">
                 <h3 class="box-title">用户管理</h3>
@@ -52,7 +41,8 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody id="tableBody"></tbody>
+                        <tbody id="tableBody">
+                        </tbody>
                     </table>
                     <div class="paging-toolbar">
                         <ul id="grid_paging_part"></ul>
@@ -66,3 +56,4 @@
 @section scripts{
     <script src="~/Views/User/Index.js"></script>
 }
+
