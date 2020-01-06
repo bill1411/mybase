@@ -4,5 +4,23 @@
         <name>SwaggerCoreApi</name>
     </assembly>
     <members>
+        <member name="M:CoreApi.Controllers.ValuesController.Get">
+            <summary>
+            获取value1和value2
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SwaggerCoreApi.Extensions.SwaggerExtension.ApplyTagDescriptions">
+            <summary>
+            添加控制器swagger扩展类
+            </summary>
+        </member>
+        <member name="M:SwaggerCoreApi.Extensions.SwaggerExtension.ApplyTagDescriptions.Apply(Swashbuckle.AspNetCore.Swagger.SwaggerDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            swagger汉化标签
+            </summary>
+            <param name="swaggerDoc"></param>
+            <param name="context"></param>
+        </member>
     </members>
 </doc>
