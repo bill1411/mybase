@@ -1,0 +1,16 @@
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\SwaggerCoreApi.deps.json
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\SwaggerCoreApi.runtimeconfig.json
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\SwaggerCoreApi.runtimeconfig.dev.json
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\SwaggerCoreApi.dll
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\SwaggerCoreApi.pdb
+D:\Project\mybase\Solution\CoreApi\obj\Debug\netcoreapp2.2\SwaggerCoreApi.RazorAssemblyInfo.cache
+D:\Project\mybase\Solution\CoreApi\obj\Debug\netcoreapp2.2\SwaggerCoreApi.RazorAssemblyInfo.cs
+D:\Project\mybase\Solution\CoreApi\obj\Debug\netcoreapp2.2\SwaggerCoreApi.AssemblyInfoInputs.cache
+D:\Project\mybase\Solution\CoreApi\obj\Debug\netcoreapp2.2\SwaggerCoreApi.AssemblyInfo.cs
+D:\Project\mybase\Solution\CoreApi\obj\Debug\netcoreapp2.2\SwaggerCoreApi.RazorTargetAssemblyInfo.cache
+D:\Project\mybase\Solution\CoreApi\obj\Debug\netcoreapp2.2\SwaggerCoreApi.dll
+D:\Project\mybase\Solution\CoreApi\obj\Debug\netcoreapp2.2\SwaggerCoreApi.pdb
+D:\Project\mybase\Solution\CoreApi\bin\Debug\netcoreapp2.2\SwaggerCoreApi.xml
